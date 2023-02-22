@@ -83,7 +83,7 @@
 
 .overlay-popup  .nextBtn{
   position: absolute;
-  right: 100px;
+  right: 10vw;
   top: 50%;
   background-color: #fff;
   padding: 5px;
@@ -98,7 +98,7 @@
 
 .overlay-popup  .prevBtn{
   position: absolute;
-  left: 100px;
+  left: 10vw;
   top: 50%;
   background-color: #fff;
   padding: 5px;
