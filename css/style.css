@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+.container  .imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.container  .imgs img {
+  max-width: 100%;
+  width: 200px;
+  height: 200px;
+  background-color: #f6f6f6;
+  padding: 3px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  margin: 5px;
+}
+
+/* Start Gallery Popup Image */
+.overlay-popup {
+  position: fixed;
+  background-color: rgb(0 0 0 / 70%);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+}
+
+.popup-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 3px solid #333;
+  z-index: 1001;
+}
+
+.popup-box h3 {
+  text-align: center;
+  margin: 0 auto 20px;
+  color: var(--main-color);
+}
+
+.popup-box .close-button {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background-color: black;
+  color: white;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Arial', 'Tahoma';
+  line-height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.popup-box img {
+  max-width: 100%;
+}
+
+
+.overlay-popup  .nextBtn{
+  position: absolute;
+  right: 100px;
+  top: 50%;
+  background-color: #fff;
+  padding: 5px;
+  font-weight: bold;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.overlay-popup  .prevBtn{
+  position: absolute;
+  left: 100px;
+  top: 50%;
+  background-color: #fff;
+  padding: 5px;
+  font-weight: bold;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  cursor: pointer;
+}
+/* End Gallery Popup Image */
